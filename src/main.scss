@@ -1,3 +1,5 @@
+@import "./partials/article/article.scss";
+
 body * {
   outline: 1px solid lightgrey;
 }
@@ -5,9 +7,43 @@ body * {
 .container {
   max-width: 1200px;
   margin: 0 auto;
-  height: 100px;
+  padding: 50px 0;
 }
 
 footer {
   background-color: #fb9c06;
+}
+
+.for-columns {
+  display: flex;
+}
+
+.for-columns__item {
+  width: 25%;
+}
+
+.two-columns {
+  display: flex;
+}
+
+.two-columns__item {
+  width: 50%;
+}
+
+.float-wrapper {
+  border: 5px solid tomato;
+}
+
+.float {
+  border: 1px solid green;
+  width: 150px;
+  height: 150px;
+}
+
+.float-left {
+  float: left;
+}
+
+.float-right {
+  float: right;
 }

@@ -18,6 +18,43 @@
     </div>
     <main class="container">
       main content
+      <div class="for-columns">
+        <div class="for-columns__item">
+          @@include(
+            './partials/article/_article.html',
+             {
+              "imgPath": "../../img/star.jpg",
+              "articleText": "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Itaque eos numquam facere consequatur magni ex, ullam earum ab laudantium deleniti! Distinctio voluptate, quis totam a provident commodi excepturi dolorem assumenda!"
+            }
+          )
+        </div>
+        <div class="for-columns__item">
+          <img  src="img/star.jpg" />
+        </div>
+        <div class="for-columns__item">
+          @@include(
+            './partials/article/_article.html',
+             {
+              "imgPath": "../../img/50px.gif",
+              "articleText": "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Itaque eos numquam facere consequatur magni ex, ullam earum ab laudantium deleniti! Distinctio voluptate, quis totam a provident commodi excepturi dolorem assumenda!" 
+            }
+          )
+        </div>
+        <div class="for-columns__item">
+          @@include(
+            './partials/article/_article.html',
+             {
+              "articleText": "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Itaque eos numquam facere consequatur magni ex, ullam earum ab laudantium deleniti! Distinctio voluptate, quis totam a provident commodi excepturi dolorem assumenda!"  
+            }
+          )
+        </div>
+      </div>
+      <div class="float-wrapper">
+        <div class="float float-left">Float left</div>
+        <div class="float float-right">Float right</div>
+        <div class="float float-right">Float right</div>
+        <div class="float float-right">Float right</div>
+      </div>
     </main>
     <footer>
       <div class="container">

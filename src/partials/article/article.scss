@@ -1,0 +1,21 @@
+.article p {
+    color: rgb(34, 20, 218);
+    font-size: 14px;
+    font-style: italic;
+    text-align: justify;
+    padding: 5px;
+  }
+  
+.article .read-more {
+    color: #fb9c06;
+    text-decoration: none;
+    font-style: italic;
+    text-transform: lowercase;
+    display: block;
+    text-align: right;
+}
+
+.article img {
+  float: left;
+  margin: 5px;
+}
