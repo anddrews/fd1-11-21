@@ -17,9 +17,8 @@
       </div>
     </div>
     <main class="container">
-      main content
-      <div class="for-columns">
-        <div class="for-columns__item">
+`     <div class="four-columns">
+        <div class="four-columns__item">
           @@include(
             './partials/article/_article.html',
              {
@@ -28,10 +27,16 @@
             }
           )
         </div>
-        <div class="for-columns__item">
-          <img  src="img/star.jpg" />
+        <div class="four-columns__item">
+          @@include(
+            './partials/article/_article.html',
+             {
+              "imgPath": "../../img/star.jpg",
+              "articleText": "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Itaque eos numquam facere consequatur magni ex, ullam earum ab laudantium deleniti! Distinctio voluptate, quis totam a provident commodi excepturi dolorem assumenda!"
+            }
+          )
         </div>
-        <div class="for-columns__item">
+        <div class="four-columns__item">
           @@include(
             './partials/article/_article.html',
              {
@@ -40,7 +45,7 @@
             }
           )
         </div>
-        <div class="for-columns__item">
+        <div class="four-columns__item">
           @@include(
             './partials/article/_article.html',
              {
@@ -49,12 +54,25 @@
           )
         </div>
       </div>
-      <div class="float-wrapper">
-        <div class="float float-left">Float left</div>
-        <div class="float float-right">Float right</div>
-        <div class="float float-right">Float right</div>
-        <div class="float float-right">Float right</div>
-      </div>
+      <section class="section">
+        <header class="header">Meet the team</header>
+        <div class="three-columns">
+          <div class="three-columns__item">
+            @@include('./partials/team-card/_team-card.html')
+          </div>
+          <div class="three-columns__item">
+            @@include('./partials/team-card/_team-card.html')
+          </div>
+          <div class="three-columns__item">
+            @@include('./partials/team-card/_team-card.html')
+          </div>
+        </div>
+      </section>
+      <section class="section">
+        <div class="header dots">
+          Send us a message
+        </div>
+      </section>
     </main>
     <footer>
       <div class="container">
