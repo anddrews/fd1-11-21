@@ -1,5 +1,6 @@
 @import "./partials/article/article.scss";
 @import "./partials/team-card/team-card.scss";
+@import "./sprites.scss";
 
 body * {
   outline: 1px solid lightgrey;
@@ -64,4 +65,12 @@ header {
 footer {
   height: 120px;
   background-color: lightgrey;
+}
+
+.background-image {
+  background: url('/img/rabbit.jpg') 50% 50% no-repeat;
+  background-size: contain;
+  color: white;
+  border-radius: 50%;
+  height: 389px;
 }
