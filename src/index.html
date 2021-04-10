@@ -8,76 +8,28 @@
     <script src="./js/main.js" defer></script>
   </head>
   <body>
-    <header class="container">
-        header
-    </header>
-    <div class="banner">
-      <div class="container">
-        banner
+    <div class="container">
+      <header></header>
+      <div class="two-columns">
+        <div class="two-columns__item">
+          <div class="two-columns__content bc-green"></div>
+        </div>
+        <div class="two-columns__item">
+          @@include('./partials/team-card/_team-card.html')
+        </div>
+      </div>
+    <div class="three-columns">
+      <div class="three-columns__item">
+        <div class="bc-red three-columns__content"></div>
+      </div>
+      <div class="three-columns__item">
+        @@include('./partials/team-card/_team-card.html')
+      </div>
+      <div class="three-columns__item">
+        <div class="bc-yellow three-columns__content"></div>
       </div>
     </div>
-    <main class="container">
-`     <div class="four-columns">
-        <div class="four-columns__item">
-          @@include(
-            './partials/article/_article.html',
-             {
-              "imgPath": "../../img/star.jpg",
-              "articleText": "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Itaque eos numquam facere consequatur magni ex, ullam earum ab laudantium deleniti! Distinctio voluptate, quis totam a provident commodi excepturi dolorem assumenda!"
-            }
-          )
-        </div>
-        <div class="four-columns__item">
-          @@include(
-            './partials/article/_article.html',
-             {
-              "imgPath": "../../img/star.jpg",
-              "articleText": "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Itaque eos numquam facere consequatur magni ex, ullam earum ab laudantium deleniti! Distinctio voluptate, quis totam a provident commodi excepturi dolorem assumenda!"
-            }
-          )
-        </div>
-        <div class="four-columns__item">
-          @@include(
-            './partials/article/_article.html',
-             {
-              "imgPath": "../../img/50px.gif",
-              "articleText": "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Itaque eos numquam facere consequatur magni ex, ullam earum ab laudantium deleniti! Distinctio voluptate, quis totam a provident commodi excepturi dolorem assumenda!" 
-            }
-          )
-        </div>
-        <div class="four-columns__item">
-          @@include(
-            './partials/article/_article.html',
-             {
-              "articleText": "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Itaque eos numquam facere consequatur magni ex, ullam earum ab laudantium deleniti! Distinctio voluptate, quis totam a provident commodi excepturi dolorem assumenda!"  
-            }
-          )
-        </div>
-      </div>
-      <section class="section">
-        <header class="header">Meet the team</header>
-        <div class="three-columns">
-          <div class="three-columns__item">
-            @@include('./partials/team-card/_team-card.html')
-          </div>
-          <div class="three-columns__item">
-            @@include('./partials/team-card/_team-card.html')
-          </div>
-          <div class="three-columns__item">
-            @@include('./partials/team-card/_team-card.html')
-          </div>
-        </div>
-      </section>
-      <section class="section">
-        <div class="header dots">
-          Send us a message
-        </div>
-      </section>
-    </main>
-    <footer>
-      <div class="container">
-        footer
-      </div>
-    </footer>
+    <footer></footer>
+  </div>
   </body>
 </html>
