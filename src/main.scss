@@ -1,3 +1,107 @@
 body * {
   outline: 1px solid lightgrey;
 }
+.section {
+  padding: 50px 0;
+}
+.block {
+  height: 200px;
+  width: 50%;
+  margin: 0 auto;;
+}
+
+.red {
+   background-color: red;
+}
+
+.green {
+  background-color: green;
+}
+
+.blue {
+  background-color: blue;
+}
+
+.relative {
+  position: relative;
+  top: 150px;
+  left: 100px;
+}
+
+.required {
+  font-size: 30px;
+}
+
+.required:after {
+  content: '*';
+  display: inline;
+  color: red;
+  position: relative;
+  bottom: 5px;
+  left: 5px;
+}
+
+.btn-submit:hover {
+  background-color: tomato;
+  top: 15px;
+  left: 15px;
+}
+
+.btn-submit {
+  padding: 10px;
+  font-size: 18px;
+  font-weight: bold;
+  position: relative;
+  top: 0;
+  left: 0;
+  transition: all .5s ease;
+}
+
+.absolute-wrapper {
+  position: relative;
+}
+
+.absolute {
+  position: absolute;
+  top: 50px;
+  left: 50px;
+}
+
+.tooltip {
+  position: relative;
+  cursor: pointer;
+  width: 50%;
+}
+
+.tooltip:after {
+  display: inline-block;
+  border: 2px solid lightgray;
+  padding: 5px 10px;
+  border-radius: 7px;
+  position: absolute;
+  bottom: calc(100% + 15px);
+  left: calc(100% - 30px);
+  max-width: 150px;
+  width: 100%;
+  height: 150px;
+  // background-color: rgba(255, 255, 255, .5);
+  background-image: url('https://images.squarespace-cdn.com/content/52ffd8dde4b0ee230b35177c/1393633080311-F7EW390DKYSGE5INE7RA/Domvision+House+50px.png?content-type=image%2Fpng');
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.tooltip:hover:before {
+  content: '';
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 10px 10px 0 10px;
+  border-color: lightgray transparent transparent transparent;
+  position: absolute;
+  bottom: calc(100% + 7px);
+  left: calc(100% - 20px);
+}
+
+.tooltip:hover:after {
+  content: attr(data-tip);
+}
