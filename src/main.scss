@@ -1,5 +1,5 @@
 body * {
-  outline: 1px solid lightgrey;
+  // outline: 1px solid lightgrey;
 }
 .section {
   padding: 50px 0;
@@ -55,6 +55,7 @@ body * {
   top: 0;
   left: 0;
   transition: all .5s ease;
+  z-index: 10;
 }
 
 .absolute-wrapper {
@@ -104,4 +105,88 @@ body * {
 
 .tooltip:hover:after {
   content: attr(data-tip);
+}
+
+.relative, .absolute, .fixed {
+  color: white;
+}
+
+.fixed {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.sticky {
+  background-color: tomato;
+  position: sticky;
+  bottom: 100px;
+  top: 100px;
+  width: 150px;
+  height: 150px;
+  z-index: 2;
+}
+
+.sticky-header {
+  position: sticky;
+  top: 0;
+  background-color: lightgray;
+  z-index: 30;
+}
+
+.parent {
+  margin: 50px auto;
+  width: 100px;
+  height: 100px;
+  position: relative;
+  z-index: 10000;
+  background-color: lightgray;
+}
+
+.child {
+  height: 100px;
+  width: 100px;
+  position: fixed;
+  background-color: red;
+  top: 0;
+  left: 0;
+}
+
+.modal-wrapper {
+  width: 100vw;
+  height: 100vh;
+  background-color: #d4d2d2db;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 99999;
+  display: flex;
+}
+
+.modal-content {
+  width: 400px;
+  height: 200px;
+  border: 1px solid lightgray;
+  border-radius: 15px;
+  position: relative;
+  background-color: #fff;
+  margin: auto;
+  padding: 15px;
+}
+
+.modal-closer {
+  position: absolute;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  border: 1px solid lightgray;
+  top: -20px;
+  right: -25px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #fff;
+  z-index: 1;
+  cursor: pointer;
 }

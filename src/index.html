@@ -9,13 +9,16 @@
   </head>
   <body>
     <section>
-      <header>
+      <header class="sticky-header">
         <h2>
-          Position relative
+          Position relative (sticky)
         </h2>
       </header>
+      <div class="sticky">
+        Sticky
+      </div>
       <div class="block red"></div>
-      <div class="block green relative"></div>
+      <div class="block green relative">Relative</div>
       <div class="block blue"></div>
       <div class="section">
         <span class="required">Required field</span>
@@ -32,11 +35,38 @@
         </h2>
       </header>
       <div class="block red"></div>
-      <div class="block blue absolute"></div>
+      <div class="block blue absolute">Absolute</div>
       <div class="block green"></div>
       <p class="tooltip" data-tip="You need to read War and Peace">
         Lorem ipsum dolor sit amet, consectetur adipisicing elit. In natus delectus commodi consequuntur error mollitia harum, reprehenderit provident laboriosam sapiente nisi, molestiae quaerat quidem quas quos quo vitae dicta excepturi!
       </p> 
     </section>
+    <section class="absolute-wrapper">
+      <header>
+        <h2>
+          Position fixed
+        </h2>
+      </header>
+      <div class="block red"></div>
+      <div class="block blue fixed">Fixed</div>
+      <div class="block green"></div>
+      <p class="tooltip" data-tip="You need to read War and Peace">
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. In natus delectus commodi consequuntur error mollitia harum, reprehenderit provident laboriosam sapiente nisi, molestiae quaerat quidem quas quos quo vitae dicta excepturi!
+      </p> 
+    </section>
+    <section>
+      <div class="parent">
+        <div class="child">
+          Child
+        </div>
+        Parent
+      </div>
+    </section>
+    <div class="modal-wrapper">
+      <div class="modal-content">
+        <div class="modal-closer">X</div>
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Minus labore numquam atque repudiandae esse officiis, blanditiis quisquam temporibus dolorum delectus magni reiciendis necessitatibus tempore accusantium recusandae, iure repellat, accusamus porro.
+      </div>
+    </div>
   </body>
 </html>
