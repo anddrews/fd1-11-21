@@ -1,3 +1,46 @@
 body * {
   outline: 1px solid lightgrey;
 }
+
+.menu {
+  &__item {
+    position: relative;
+    cursor: pointer;
+    display: inline-block;
+  }
+
+  &__content {
+    display: none;
+    top: 100%;
+    left: 0;
+    position: absolute;
+    padding-left: 100%;
+  }
+}
+
+.menu__item:hover > .menu__content {
+  display: block;
+}
+
+.sub-menu {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.sub-menu__item {
+  padding: 7px 15px;
+}
+
+.menu__image {
+  max-width: 80px;
+  max-height: 80px;
+}
+
+.menu__description {
+  color: rgb(33, 190, 46);
+  font-size: 16px;
+  font-weight: bold;
+  text-transform: uppercase;
+  text-align: center;
+}
