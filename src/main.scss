@@ -13,17 +13,17 @@ body * {
   position: relative;
   &:before {
     position: absolute;
-    content: '';
+    content: '\f030';
     width: 20px;
     height: 15px;
     display: block;
     left: 8px;
     bottom: 8px;
-    background-image: url("./img/camera.svg");
-    background-size: contain;
-    background-repeat: no-repeat;
-    background-position: 50%;
     z-index: 1;
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+    font-size: 1rem;
+    color: red;
   }
 
   &:after {
@@ -88,4 +88,10 @@ body * {
 
 .fab.fa-angellist {
   font-size: 15em;
+}
+
+.fa-pseudo:before {
+  content: '\f834';
+  font-family: "Font Awesome 5 Brands";
+  font-size: 5em;
 }
