@@ -1,0 +1,52 @@
+.news {
+    display: flex;
+    padding: 10px;
+    border: 2px solid red;
+
+    &--column {
+        flex-direction: column;
+    }
+
+    &__img {
+        flex-basis: 40%;
+        img {
+            max-width: 100%;
+            max-height: 100%;
+        }
+
+        &--big-image {
+            flex-basis: 50%;
+        }
+    }
+
+    &__text {
+        flex-basis: 60%;
+        
+        &--big-image {
+            flex-basis: 50%;
+            font-weight: bold;
+        }
+    }
+}
+
+
+.news {
+
+}
+#news__img {
+    color: yellow;
+}
+.big-image .news__img {
+    color: green;
+}
+
+.news__img {
+    color: red;
+}
+
+.news__img {
+    color:tomato;
+}
+
+
+

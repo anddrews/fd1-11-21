@@ -25,5 +25,49 @@
     <i class="fab fa-angellist fa-9x"></i>
     <i class="fas fa-camera"></i>
     <div class="fa-pseudo"></div>
+    @@include('./partials/news/_news.html', {
+      "newsPicturePath": "./img/cup.jpg",
+      "text": "Test text",
+      "direction": "",
+      "modificator": "",
+      "withCamera": "with-red-camera"
+
+    })
+    @@include('./partials/news/_news.html', {
+      "newsPicturePath": "./img/cup.jpg",
+      "text": "Test text",
+      "direction": "",
+      "modificator": "--big-image",
+      "withCamera": ""
+
+
+    })
+    <div class="two-columns">
+      <div class="two-columns__item">
+        @@include('./partials/news/_news.html', {
+          "newsPicturePath": "./img/cup.jpg",
+          "text": "Test text",
+          "direction": "",
+          "modificator": "",
+          "withCamera": "with-red-camera"
+        })
+      </div>
+      <div class="two-columns__item">
+        @@include('./partials/news/_news.html', {
+          "newsPicturePath": "./img/cup.jpg",
+          "text": "Test text",
+          "direction": "--column",
+          "modificator": "--big-image",
+          "withCamera": "with-red-camera"
+        })
+      </div>
+    </div>
+
+    <div id="news__img" class="news__img big-image">
+      Test
+    </div>
+    <div class="big-image">
+      <div class="news__img">Test</div>
+    </div>
   </body>
 </html>
