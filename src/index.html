@@ -9,6 +9,7 @@
     <script src="./js/main.js" defer></script>
   </head>
   <body>
+    <a href="/first.html">Go first page</a>
     <div class="picture with-red-camera">
       <img src="./img/cup.jpg" alt="">
     </div>
@@ -27,17 +28,17 @@
     <div class="fa-pseudo"></div>
     @@include('./partials/news/_news.html', {
       "newsPicturePath": "./img/cup.jpg",
-      "text": "Test text",
-      "direction": "",
-      "modificator": "",
-      "withCamera": "with-red-camera"
-    })
-    @@include('./partials/news/_news.html', {
-      "newsPicturePath": "./img/cup.jpg",
-      "text": "Test text",
+      "text": "Second item",
       "direction": "",
       "modificator": "--big-image",
       "withCamera": ""
+    })
+    @@include('./partials/news/_news.html', {
+      "newsPicturePath": "./img/cup.jpg",
+      "text": "First item",
+      "direction": "",
+      "modificator": "",
+      "withCamera": "with-red-camera"
     })
     <div class="two-columns">
       <div class="two-columns__item">
@@ -66,5 +67,9 @@
     <div class="big-image">
       <div class="news__img">Test</div>
     </div>
+    <form action="/test">
+      <input type="text">
+      <input type="submit" value="Submit">
+    </form>
   </body>
 </html>
