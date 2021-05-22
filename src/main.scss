@@ -1,3 +1,57 @@
+@import "./normalize.scss";
+
 body * {
   outline: 1px solid lightgrey;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+
+  &__input {
+    font-size: 16px;
+    padding: 5px 8px;;
+  }
+
+  &__submit {
+    background-color: #fff;
+  }
+
+  &__text-input {
+    padding: 5px 7px;
+    border-radius: 5px;
+    font-weight: bold;
+
+    &:focus,
+    &:active {
+      border-color: blue;
+    }
+    &.error {
+      border-color: red;
+    }
+  }
+}
+
+.input {
+  &__input {
+    display: none;
+    width: 1px;
+    height: 1px;
+    clip: rect(0, 0, 0, 0);
+    position: relative;
+    top: -1px;
+    left: -1px;
+    margin: -1px;
+  }
+
+  &__label {
+    display: inline-block;
+    font-size: 20px;
+    padding: 20px;
+    cursor: pointer;
+  }
+}
+
+.input__input:checked + .input__label {
+  background-color: lightgray;;
 }
