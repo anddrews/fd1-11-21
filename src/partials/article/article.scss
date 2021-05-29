@@ -1,3 +1,5 @@
+@import "../../variables.scss";
+
 .article p {
     color: rgb(34, 20, 218);
     font-size: 14px;
@@ -7,7 +9,7 @@
   }
   
 .article .read-more {
-    color: #fb9c06;
+    color: $main-color;
     text-decoration: none;
     font-style: italic;
     text-transform: lowercase;

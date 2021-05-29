@@ -2,6 +2,7 @@
 @import "./partials/team-card/team-card.scss";
 @import "./partials/menu-item/menu-item.scss";
 @import "./sprites.scss";
+@import "./variables.scss";
 
 body * {
   outline: 1px solid lightgrey;
@@ -14,7 +15,7 @@ body * {
 }
 
 footer {
-  background-color: #fb9c06;
+  background-color: $main-color;
 }
 
 .four-columns {
@@ -47,7 +48,7 @@ footer {
 
 .header {
   padding: 40px 0 15px 0;
-  color: #fb9c06;
+  color: $main-color;
   text-align: center;
   font-size: 40px;
   text-decoration: underline;
@@ -60,3 +61,24 @@ footer {
 footer .header {
   color: tomato;
 }
+
+.feed-back {
+  &__btn {
+    padding: 10px;
+    color: $main-color;
+    font-weight: bold;
+
+    @include mainFont(15px);
+
+    &--primary {
+      background-color: red;
+    }
+    
+    &--secondary {
+      background-color: blue;
+    }
+  }
+}
+
+
+

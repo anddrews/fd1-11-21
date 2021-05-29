@@ -1,0 +1,7 @@
+$main-color: #fb9c06;
+
+@mixin mainFont ($fz: 30px){
+    font-size: $fz;
+    font-weight: bold;
+    color: lightgray;
+}
