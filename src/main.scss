@@ -38,3 +38,19 @@ body * {
     animation: move 2s linear 0s infinite;
   }
 }
+
+.slide {
+  position: relative;
+
+  &__caption {
+    position: absolute;
+    color: #fff;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-weight: bold;
+    font-size: 3em;
+    width: 100%;
+    text-align: center;
+  }
+}
