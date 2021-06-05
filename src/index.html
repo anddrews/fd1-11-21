@@ -3,16 +3,59 @@
   <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="./main.scss">
     <title>First project</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+    <link
+     href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css"
+     rel="stylesheet"
+     integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x"
+     crossorigin="anonymous"
+    >
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@splidejs/splide@2.4.21/dist/css/splide.min.css" integrity="sha256-EqzwzekQXKNbB5EE4nNBQT+2gWQIWRZQXAd89YdIq8M=" crossorigin="anonymous">
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@2.4.21/dist/js/splide.min.js" integrity="sha256-SmCcbf/1ehhlBnw3ZGinNu6fjQV471LDBjc4yMMJhsk=" crossorigin="anonymous"></script>
-    <script src="./js/main.js" defer></script>
+    <script
+     src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4"
+     crossorigin="anonymous"
+    >
+    </script>
+    <script defer  
+      crossorigin="anonymous"
+     src="https://cdn.jsdelivr.net/npm/@splidejs/splide@2.4.21/dist/js/splide.min.js" integrity="sha256-SmCcbf/1ehhlBnw3ZGinNu6fjQV471LDBjc4yMMJhsk=" crossorigin="anonymous"></script>
+    <script defer src="./js/main.js"></script>
+    <link rel="stylesheet" href="./main.scss">
   </head>
   <body>
     <div class="container">
+      <div class="row">
+        <div class="col-12">
+          <div class="test splide">
+            <div class=" splide__track">
+              <ul class=" splide__list">
+                <li class=" splide__slide">
+                  <div class="slide">
+                    <h3 class="slide__caption">The cat</h3>
+                    <img src="https://icatcare.org/app/uploads/2018/07/Thinking-of-getting-a-cat.png" class="d-block w-100" alt="...">
+                  </div>
+                </li>
+                <li class="splide__slide">
+                  <img src="https://ichef.bbci.co.uk/news/976/cpsprodpb/12A9B/production/_111434467_gettyimages-1143489763.jpg" class="d-block w-100" alt="...">
+                </li>
+                <li class="splide__slide">
+                  <img src="https://cdn.mos.cms.futurecdn.net/VSy6kJDNq2pSXsCzb6cvYF-970-80.jpg.webp" class="d-block w-100" alt="...">
+                </li>
+                </li>
+                <li class="splide__slide">
+                    <iframe
+                      src="https://api-maps.yandex.ru/frame/v1/-/CCUaaCgALB?lang=en_RU"
+                      width="100%"
+                      height="400"
+                      frameborder="0"
+                    >
+                    </iframe>
+                  </li>
+                </ul>
+              </div>
+            </div>
+        </div>
+      </div>
       <div class="row">
         <div class="col-xl-8 col-md-12">
           <div class="column-wrapper">
@@ -65,47 +108,6 @@
             </div>
             <div class="row">
               <div class="col-12">
-                <div class="splide">
-                  <div class="splide__track">
-                    <ul class="splide__list">
-                      <li class="splide__slide">
-                        <div class="slide">
-                          <h3 class="slide__caption">The cat</h3>
-                          <img src="https://icatcare.org/app/uploads/2018/07/Thinking-of-getting-a-cat.png" class="d-block w-100" alt="...">
-                        </div>
-                      </li>
-                      <li class="splide__slide">
-                        <img src="https://ichef.bbci.co.uk/news/976/cpsprodpb/12A9B/production/_111434467_gettyimages-1143489763.jpg" class="d-block w-100" alt="...">
-                      </li>
-                      <li class="splide__slide">
-                        <img src="https://cdn.mos.cms.futurecdn.net/VSy6kJDNq2pSXsCzb6cvYF-970-80.jpg.webp" class="d-block w-100" alt="...">
-                      </li>
-                      </li>
-                      <li class="splide__slide">
-                        <iframe
-                 src="https://api-maps.yandex.ru/frame/v1/-/CCUaaCgALB?lang=en_RU"
-                 width="100%"
-                 height="400"
-                 frameborder="0"
-                ></iframe>
-                      </li>
-                    </ul>
-                  </div>
-                </div>
-                <script>
-                  new Splide( '.splide', {
-                    type   : 'loop',
-	                  perPage: 1,
-                    speed: 2000,
-                    gap: '20px',
-                    start: 3,
-                    interval: '100'
-                  } ).mount();
-                </script>
-              </div>
-            </div>
-            <div class="row">
-              <div class="col-12">
                 <iframe
                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3023.795154578587!2d-73.97843958414616!3d40.722525744907664!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c2597a30500633%3A0x9c4a634eab3c9394!2s80%20Avenue%20D%2C%20New%20York%2C%20NY%2010009%2C%20USA!5e0!3m2!1sen!2sby!4v1622280446940!5m2!1sen!2sby"
                  width="600"
@@ -143,5 +145,9 @@
       </div>
 
     </div>
+    <script
+     src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4"
+    >
+    </script>
   </body>
 </html>
