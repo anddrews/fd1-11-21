@@ -1,3 +1,25 @@
 body * {
   outline: 1px solid lightgrey;
 }
+
+html[lang="de"] {
+  font-family: cursive;
+}
+html[lang="he"] {
+  font-family: 'Rubik';
+}
+
+.accordion {
+  input {
+    display: none;
+  }
+}
+.accordion__input--close:checked ~ .accordion__content {
+  height: 0;
+  overflow: hidden;
+}
+
+.accordion__input--open:checked ~ .accordion__opener--open,
+.accordion__input--close:checked ~ .accordion__opener--close {
+display: none;
+}
