@@ -5,13 +5,27 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="./main.scss">
     <title>First project</title>
+    <script src="https://kit.fontawesome.com/a1e203170d.js" crossorigin="anonymous"></script>
     <script src="./js/main.js" defer></script>
   </head>
   <body>
+    <nav class="main-menu">
+      <button class="main-menu__btn-mobile test lock tmp" >
+        <i class="fas fa-bars"></i>
+        <span>Menu</span>
+      </button>
+      <ul class="main-menu__list">
+        <li class="main-menu__item">Main</li>
+        <li class="main-menu__item">Home</li>
+        <li class="main-menu__item">Portfolio</li>
+        <li class="main-menu__item">Sontact Us</li>
+        <li class="main-menu__item">About</li>
+      </ul>
+    </nav>
     <h1>Hello world</h1>
-    <p>P 1</p>
+    <p class="warning">P 1</p>
     <p>P 2</p>
-    <p>P 3</p>
+    <p onclick="clickHandler();">P 3</p>
     <p>P 4</p>
     <p>P 5</p>
   </body>

@@ -8,4 +8,65 @@ body * {
   font-style: italic;
   text-transform: uppercase;
   white-space: pre;
+
+  &:before {
+  content: 'Open'
+  }
 }
+
+.main-menu {
+  position: relative;
+
+  &.open .main-menu__list {
+    display: flex;
+  }
+
+  &__list {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    margin: 0;
+
+    @media all and (max-width: 568px) {
+      flex-direction: column;
+      width: 30%;
+      position: absolute;
+      top: 100%;
+      z-index: 1;
+      background-color: #fff;
+      display: none;
+    }
+  }
+
+  &__btn-mobile {
+    display: none;
+    border: 1px solid lightgray;
+    padding: 2px;
+    border-radius: 3px;
+    cursor: pointer;
+    background-color: transparent;
+
+    @media all and (max-width: 568px) {
+      display: flex;
+      align-items: center;
+      width: fit-content;
+    }
+  }
+
+  &__item {
+    padding: 7px 15px;
+    cursor: pointer;
+    margin-right: 5px;
+    flex: 1 0 auto;
+    text-align: center;
+    
+    @media all and (max-width: 568px) {
+      margin-right: 0;
+    }
+
+    &:hover {
+      background-color: rgb(248, 234, 234);
+    }
+  }
+}
+

@@ -177,7 +177,7 @@ tmp.classList.add('warning');
 var foo = document.querySelectorAll('p');
 
 foo.forEach(function(item) {
-    item.classList.add('warning');
+    // item.classList.remove('warning');
 })
 
 // *
@@ -203,3 +203,72 @@ console.log('    *\n   ***\n  *****\n *******\n*********');
 // console.log('******');
 
 tmp.innerHTML = '    *\n   ***\n  *****\n *******\n*********';
+
+var el = document.querySelector('p');
+
+function clickHandler() {
+    console.log('Clicked');
+}
+
+function logger() {
+    console.log('log Clicked');
+}
+
+// el.onclick = clickHandler;
+// el.addEventListener('click', clickHandler);
+el.addEventListener('doubleclick', clickHandler);
+el.addEventListener('click', logger);
+
+var menuEl = document.querySelector('.main-menu');
+var btnEl = document.querySelector('.main-menu__btn-mobile');
+
+function toggleMenu() {
+    menuEl.classList.toggle('open');
+}
+
+function logMenuClick() {
+    console.log('menu button has clicked');
+}
+
+// btnEl.onclick = toggleMenu;
+// btnEl.ondoubleclick = logMenuClick;
+
+btnEl.addEventListener('click', toggleMenu);
+btnEl.addEventListener('dblclick', logMenuClick);
+
+var body = document.body;
+
+body.addEventListener('click', function(event) {
+    var isTargetBtn = false;
+    
+    for (var i = 0; i < btnEl.children.length; i ++) {
+        if (btnEl.children[i] == event.target) {
+            isTargetBtn = true;
+            return;
+        }
+    }
+    
+    if (!isTargetBtn) {
+        menuEl.classList.remove('open');        
+    }
+    // menuEl.classList.remove('open');
+});
+
+
+var array = ['a', 'b', 'c', 'd'];
+var object = {
+    a: 'a',
+    b: 'b',
+    c: 'c',
+    d: 'd'
+}
+for (var i = 0; i < array.length; i++) {
+    console.log('i = ' + i + ' value = ' + array[i]);
+}
+
+console.log('object.d = ' + object['d'])
+console.log("object['d'] = " + object['d'])
+
+window.addEventListener('scroll', function () {
+    console.log('scroll');
+})
