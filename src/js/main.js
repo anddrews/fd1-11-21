@@ -272,3 +272,70 @@ console.log("object['d'] = " + object['d'])
 window.addEventListener('scroll', function () {
     console.log('scroll');
 })
+
+
+function pow2(param) {
+    return Math.pow(param, 2);
+}
+
+function pow3(param) {
+    return Math.pow(param, 3);
+}
+
+function printer(num, fn) {
+    console.log('printer', fn(num));
+}
+
+printer(2, pow2);
+printer(2, pow3);
+
+
+var arr = [1, 2, 3, 4, 5, 6, 7];
+
+var arrPow2 = [];
+
+for(var i = 0; i < arr.length; i++) {
+    arrPow2[i] = pow2(arr[i]);
+}
+
+function processor(item, index) {
+    console.log('from processor');
+    return index % 2 === 0
+     ? pow2(item)
+     : pow3(item);
+};
+
+function isOdd(item) {
+    return item % 2;
+}
+
+var arrPow2Map = arr.map(processor);
+
+arr.forEach(processor);
+
+
+console.log(arr);
+console.log(arrPow2);
+console.log(arrPow2Map);
+
+console.log(arr.filter(isOdd));
+
+var arrObj = [{name: 'Hp', price: 100}, {name: 'Apple', price: 100}, {name: 'Hp', price: 200}];
+
+console.log(arrObj.filter(function(item) {
+    if (item.price === 100) {
+        return true;
+    }
+    return false;
+}));
+
+console.log(arrObj.findIndex(function(item) {
+    if (item.price === 100) {
+        return true;
+    }
+    return false;
+}));
+
+console.log(arr.reduce(function(acc, item) {
+    return acc + item;
+}, 0))
