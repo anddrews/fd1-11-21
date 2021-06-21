@@ -339,3 +339,17 @@ console.log(arrObj.findIndex(function(item) {
 console.log(arr.reduce(function(acc, item) {
     return acc + item;
 }, 0))
+
+
+var element = document.createElement('div');
+
+element.innerHTML = `
+<h2>New element</h2>
+<p>Some text</p>
+<span>span</span>`
+
+element.classList.add('warning');
+element.style.backgroundColor = 'lightgrey';
+
+
+document.body.appendChild(element);
