@@ -1,0 +1,12 @@
+$main-font-size: 18px;
+$secondary-font-size: .7 * $main-font-size;
+$main-header-font-size: 1.5 * $main-font-size;
+
+$mobile-view-size: 550px;
+
+@mixin mobileView() {
+    @media screen and (max-width: $mobile-view-size) {
+        @content;
+        color: red;
+    }
+}

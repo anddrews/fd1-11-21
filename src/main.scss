@@ -1,3 +1,5 @@
+@import "./variables.scss";
+
 body * {
   outline: 1px solid lightgrey;
 }
@@ -111,7 +113,18 @@ body * {
   display: flex;
   flex-direction: column;
 
+  label {
+    font-size: $secondary-font-size;
+
+    @include mobileView {
+      font-size: 2 * $secondary-font-size;   
+    }
+  }
+
+
   &__warning {
     color: red;
+    font-size: $main-header-font-size;
+
   }
 }
