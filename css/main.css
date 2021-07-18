@@ -1,0 +1,134 @@
+.article p {
+  color: #2214da;
+  font-size: 14px;
+  font-style: italic;
+  text-align: justify;
+  padding: 5px; }
+
+.article .read-more {
+  color: #fb9c06;
+  text-decoration: none;
+  font-style: italic;
+  text-transform: lowercase;
+  display: block;
+  text-align: right; }
+
+.article img {
+  float: left;
+  margin: 5px; }
+
+.team-card__header {
+  color: #6e6d6b;
+  font-size: 22px;
+  margin-bottom: 20px;
+  text-align: center; }
+
+.team-card__position {
+  color: #fcb544; }
+
+.team-card__img {
+  border-radius: 50%;
+  overflow: hidden;
+  border: 2px solid #fcb544;
+  padding: calc(50% - 2px);
+  background-position: 50% 45%;
+  background-size: cover; }
+
+.team-card__content {
+  font-size: 12px;
+  text-align: justify;
+  font-size: 30px;
+  font-weight: bold;
+  color: lightgray; }
+
+.menu-item {
+  display: inline-block;
+  padding: 0 15px;
+  text-decoration: none; }
+  .menu-item:hover {
+    position: relative;
+    top: 2px;
+    left: 2px;
+    opacity: .5; }
+  .menu-item__description {
+    text-align: center; }
+
+.sprite {
+  width: 54px;
+  height: 54px;
+  background-image: url("../img/css_sprites.png"); }
+
+.blog {
+  background-position: -10px -10px; }
+
+.home {
+  background-position: -84px -10px; }
+
+.info {
+  background-position: -10px -84px; }
+
+.mail {
+  background-position: -84px -84px; }
+
+.work {
+  background-position: -158px -10px; }
+
+body * {
+  outline: 1px solid lightgrey; }
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 50px 0; }
+
+footer {
+  background-color: #fb9c06; }
+
+.four-columns {
+  display: flex;
+  flex-wrap: wrap; }
+
+.four-columns__item {
+  width: 25%; }
+
+.two-columns {
+  display: flex; }
+
+.two-columns__item {
+  width: 50%; }
+
+.three-columns {
+  display: flex;
+  flex-wrap: wrap; }
+
+.three-columns__item {
+  width: 33.3%;
+  padding: 0 50px;
+  box-sizing: border-box; }
+
+.header {
+  padding: 40px 0 15px 0;
+  color: #fb9c06;
+  text-align: center;
+  font-size: 40px;
+  text-decoration: underline; }
+
+.header.dots:after {
+  content: "..."; }
+
+footer .header {
+  color: tomato; }
+
+.feed-back__btn {
+  padding: 10px;
+  color: #fb9c06;
+  font-weight: bold;
+  font-size: 15px;
+  font-weight: bold;
+  color: lightgray; }
+  .feed-back__btn--primary {
+    background-color: red; }
+  .feed-back__btn--secondary {
+    background-color: blue; }
+
+/*# sourceMappingURL=maps/main.css.map */
