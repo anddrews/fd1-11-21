@@ -64,7 +64,8 @@ const httpBuild = () => src(path.src.html)
     prefix: '@@',
     basepath: '@file'
   }))
-  .pipe(replace(/(<link rel="stylesheet" href=".\/)(main.)scss(">)/, '$1css/$2css$3'))
+  .pipe(replace(/(<link rel="stylesheet" href=").+\/(main.)scss(">)/, '$1/css/$2css$3'))
+  .pipe(replace(/(src=").+(\/img)/g, '$1$2'))
   .pipe(dest(path.dist.html))
   .pipe(browsersync.stream());
 
@@ -72,7 +73,7 @@ const stylesBuild = () => src(path.src.style)
   .pipe(sourcemaps.init())
   .pipe(plumber())
   .pipe(sass())
-  .pipe(replace(/(url\(")[.|..\/]+(img\/.+\..+"\))/g, '$1../../$2'))
+  .pipe(replace(/(url\(")[.|..\/]+(img\/.+\..+"\))/g, '$1../$2'))
   .pipe(plumber.stop())
   .pipe(sourcemaps.write('./maps/'))
   .pipe(dest(path.dist.css))
